@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0 rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://standardebooks.org/ebooks/confucius/analects/james-legge</dc:identifier>
 		<dc:date>2026-06-24T23:04:23Z</dc:date>
 		<meta property="dcterms:modified">2026-06-24T23:04:23Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
-		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org/</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
 		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
-		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com/</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
 		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
@@ -35,7 +36,7 @@
 		<dc:subject id="subject-2">Philosophy, Chinese</dc:subject>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
 		<meta property="term" refines="#subject-2">sh85100886</meta>
-		<meta property="se:subject">Philosophy</meta>
+		<meta property="schema:genre">Philosophy</meta>
 		<dc:description id="description">The paradigmatic Chinese sage expounds on leading an ethical and fulfilled life.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/confucius"&gt;Confucius&lt;/a&gt; is one of the most influential figures in Chinese philosophy. His teachings are laid out most fully in the &lt;i&gt;Analects&lt;/i&gt;, a compilation of sayings, aphorisms, and ideas organized by his followers after his death.&lt;/p&gt;
@@ -47,25 +48,26 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/3330</dc:source>
 		<dc:source>https://archive.org/details/chineseclassics0000legg_d3h3</dc:source>
-		<meta property="se:production-notes">1. Italics in the page scans was removed, since they appear not to be emphasis but rather related somehow to the translation; however it's unclear how the italics are actually related to the source text, and without the corresponding Chinese or Legge's glosses it makes no sense to keep them. 2. Numbers within subchapters have been replaced with paragraph breaks. 3. Some names are marked with different diacritics, like `Lü`/`Lû`. It's unclear if these are printer's errors or actually different names, so they have been left as-is in print.</meta>
-		<meta property="se:word-count">28129</meta>
-		<meta property="se:reading-ease.flesch">71.95</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Analects</meta>
-		<meta property="se:url.vcs.github">https://github.com/standardebooks/confucius_analects_james-legge</meta>
+		<meta property="schema:wordCount">28129</meta>
+		<meta property="schema:educationalLevel">71.95</meta>
+		<link href="https://en.wikipedia.org/wiki/Analects" rel="schema:sameAs"/>
+		<meta property="schema:workExample" id="vcs-repository">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/confucius_analects_james-legge" refines="#vcs-repository" rel="schema:codeRepository"/>
 		<dc:creator id="author">Confucius</dc:creator>
 		<meta property="file-as" refines="#author">Confucius</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Confucius</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n80050515</meta>
+		<link href="https://en.wikipedia.org/wiki/Confucius" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n80050515.html" refines="#author" rel="schema:sameAs"/>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<dc:contributor id="translator">James Legge</dc:contributor>
 		<meta property="file-as" refines="#translator">Legge, James</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#translator">https://en.wikipedia.org/wiki/James_Legge</meta>
-		<meta property="se:url.authority.nacoaf" refines="#translator">http://id.loc.gov/authorities/names/n50037968</meta>
+		<link href="https://en.wikipedia.org/wiki/James_Legge" refines="#translator" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n50037968.html" refines="#translator" rel="schema:sameAs"/>
 		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
 		<dc:contributor id="artist">Nicholas Roerich</dc:contributor>
 		<meta property="file-as" refines="#artist">Roerich, Nicholas</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Nicholas_Roerich</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n50049053</meta>
+		<link href="https://en.wikipedia.org/wiki/Nicholas_Roerich" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n50049053.html" refines="#artist" rel="schema:sameAs"/>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">Anonymous</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Anonymous</meta>
@@ -75,7 +77,7 @@
 		<meta property="role" refines="#sponsor" scheme="marc:relators">spn</meta>
 		<dc:contributor id="producer-1">Alex Cabal</dc:contributor>
 		<meta property="file-as" refines="#producer-1">Cabal, Alex</meta>
-		<meta property="se:url.homepage" refines="#producer-1">https://alexcabal.com/</meta>
+		<link href="https://alexcabal.com/" refines="#producer-1" rel="schema:url"/>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
