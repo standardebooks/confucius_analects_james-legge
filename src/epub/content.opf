@@ -30,7 +30,7 @@
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
 		<dc:title id="title">Analects</dc:title>
 		<meta property="file-as" refines="#title">Analects</meta>
-		<dc:subject id="subject-1">Ethics -- China</dc:subject>
+		<dc:subject id="subject-1">Ethics--China</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
 		<meta property="term" refines="#subject-1">sh85045101</meta>
 		<dc:subject id="subject-2">Philosophy, Chinese</dc:subject>
